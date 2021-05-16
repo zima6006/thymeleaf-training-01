@@ -28,4 +28,12 @@ public class Car {
         this.model = model;
         this.mark = mark;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "model='" + model + '\'' +
+                ", mark='" + mark + '\'' +
+                '}';
+    }
 }
