@@ -6,11 +6,15 @@
 </head>
 <body>
 <h1>Kurs thymelefe</h1>
-<p>Pozdrowienia dla wszystkich</p>
-<p th:text="${name}"></p>
 
-<p th:text="${car.getMark()}"></p>
-<p th:text="${car.getModel()}"></p>
+
+<tr th:each="car: ${cars}">
+
+    <td th:text="${car.getMark()}"/></br>
+    <td th:text="${car.getModel()}"/></br>
+    <p>---------------</p>
+
+</tr>
 
 </body>
 </html>
